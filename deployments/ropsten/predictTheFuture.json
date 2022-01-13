@@ -1,0 +1,104 @@
+{
+  "address": "0xF5142f6B4DA62E2D233753D41a963936C593f04b",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "success",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_target",
+          "type": "address"
+        }
+      ],
+      "name": "setTargetContract",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "readAnswer",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        },
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "destroy",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "guess",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "target",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "fallback"
+    }
+  ],
+  "transactionHash": "0xbe41ed3bc3ae60a9a6be1ef929ff6b6ae27ecaf27f6c814a86128523bb501385",
+  "receipt": {
+    "to": null,
+    "from": "0xd56e7bcF62a417b821e6cf7ee16dF7715a3e82AB",
+    "contractAddress": "0xF5142f6B4DA62E2D233753D41a963936C593f04b",
+    "transactionIndex": 6,
+    "gasUsed": "307871",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x8acdd3c3ba1100d1b68066c8216b5be829bab47490ad8b5504cdd2c04a1b5bc5",
+    "transactionHash": "0xbe41ed3bc3ae60a9a6be1ef929ff6b6ae27ecaf27f6c814a86128523bb501385",
+    "logs": [],
+    "blockNumber": 11775259,
+    "cumulativeGasUsed": "2421005",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "01bf454e41413ca59431f2342bec4475",
+  "metadata": "{\"compiler\":{\"version\":\"0.4.21+commit.dfe3193c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"success\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_target\",\"type\":\"address\"}],\"name\":\"setTargetContract\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"readAnswer\",\"outputs\":[{\"name\":\"\",\"type\":\"uint8\"},{\"name\":\"\",\"type\":\"uint8\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"destroy\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"guess\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"target\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"fallback\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"contracts/predictTheFuture.sol\":\"predictTheFuture\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/predictTheFuture.sol\":{\"keccak256\":\"0xc48e45614c1fd3d8afeee562c6d412aaa568aa25a272bf6972bc419cc0b68d33\",\"urls\":[\"bzzr://b5ad18e6f365cb2903bab63541031b92b673bd7670b4cb1df9e967d1550255ee\"]}},\"version\":1}",
+  "bytecode": "0x606060405260036000806101000a81548160ff021916908360ff160217905550341561002a57600080fd5b610438806100396000396000f300606060405260043610610078576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630b93381b1461007a57806347fc822f1461008f57806353ace3f5146100c857806383197ef014610104578063a28b749a14610119578063d4b839921461012e575b005b341561008557600080fd5b61008d610183565b005b341561009a57600080fd5b6100c6600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610273565b005b34156100d357600080fd5b6100db6102b7565b604051808360ff1660ff1681526020018260ff1660ff1681526020019250505060405180910390f35b341561010f57600080fd5b61011761030e565b005b341561012457600080fd5b61012c610327565b005b341561013957600080fd5b6101416103e6565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600a6001430340426040518083600019166000191681526020018281526020019250505060405180910390206001900460ff168115156101bf57fe5b0660ff166000809054906101000a900460ff1660ff16141561027157600060019054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166311da60b46040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401600060405180830381600087803b151561026057600080fd5b5af1151561026d57600080fd5b5050505b565b80600060016101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b600080600a6001430340426040518083600019166000191681526020018281526020019250505060405180910390206001900460ff168115156102f657fe5b066000809054906101000a900460ff16915091509091565b3373ffffffffffffffffffffffffffffffffffffffff16ff5b600060019054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16632c0e0054670de0b6b3a76400006000809054906101000a900460ff166040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808260ff1660ff1681526020019150506000604051808303818588803b15156103d357600080fd5b5af115156103e057600080fd5b50505050565b600060019054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a72305820865cbd09b0f16db71c0c189087261b9b7d06ade55784ec5b5ac59f3e30d093260029",
+  "deployedBytecode": "0x606060405260043610610078576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630b93381b1461007a57806347fc822f1461008f57806353ace3f5146100c857806383197ef014610104578063a28b749a14610119578063d4b839921461012e575b005b341561008557600080fd5b61008d610183565b005b341561009a57600080fd5b6100c6600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610273565b005b34156100d357600080fd5b6100db6102b7565b604051808360ff1660ff1681526020018260ff1660ff1681526020019250505060405180910390f35b341561010f57600080fd5b61011761030e565b005b341561012457600080fd5b61012c610327565b005b341561013957600080fd5b6101416103e6565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600a6001430340426040518083600019166000191681526020018281526020019250505060405180910390206001900460ff168115156101bf57fe5b0660ff166000809054906101000a900460ff1660ff16141561027157600060019054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166311da60b46040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401600060405180830381600087803b151561026057600080fd5b5af1151561026d57600080fd5b5050505b565b80600060016101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b600080600a6001430340426040518083600019166000191681526020018281526020019250505060405180910390206001900460ff168115156102f657fe5b066000809054906101000a900460ff16915091509091565b3373ffffffffffffffffffffffffffffffffffffffff16ff5b600060019054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16632c0e0054670de0b6b3a76400006000809054906101000a900460ff166040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808260ff1660ff1681526020019150506000604051808303818588803b15156103d357600080fd5b5af115156103e057600080fd5b50505050565b600060019054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a72305820865cbd09b0f16db71c0c189087261b9b7d06ade55784ec5b5ac59f3e30d093260029"
+}

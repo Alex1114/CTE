@@ -2,6 +2,7 @@ require("@nomiclabs/hardhat-waffle");
 require("@nomiclabs/hardhat-truffle5");
 require("@nomiclabs/hardhat-ethers");
 require('hardhat-deploy');
+require("@nomiclabs/hardhat-etherscan");
 require("dotenv").config();
 
 
@@ -32,6 +33,22 @@ module.exports = {
           "contracts/guessTheSecretNumber.sol": {
               version: "0.4.21",
               settings: {}
+          },
+          "contracts/guessTheRandomNumber.sol": {
+            version: "0.4.21",
+            settings: { }
+          },
+          "contracts/guessTheNewNumber.sol": {
+            version: "0.4.21",
+            settings: { }
+          },
+          "contracts/predictTheFuture.sol": {
+            version: "0.4.21",
+            settings: { }
+          },
+          "contracts/predictTheBlockHash.sol": {
+            version: "0.4.21",
+            settings: { }
           }
       }
   },
@@ -75,6 +92,9 @@ module.exports = {
     ropsten: {
       url: process.env.ALCHEMY_API_ROPSTEN_URL,
       accounts: [process.env.WALLET_PRIVATE_KEY]
-  }
+    }
+  },
+  etherscan: {
+    apiKey: process.env.ETHERSCAN_API_KEY
   }
 };

